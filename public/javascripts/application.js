@@ -29,7 +29,6 @@ var Pigstravaganza = {
     var precedingPages = page.prevAll('.page');
     var offset = Pigstravaganza.sumPageHeights(precedingPages);
 
-    console.log(offset);
     Pigstravaganza.pages.animate({
       top: (-1 * offset + "px")
     });
@@ -57,7 +56,14 @@ var Pigstravaganza = {
   activateViewport: function() {
     $(window).resize(function() {
       $('.page').css({'min-height': $(window).height() + 'px'});
+      Pigstravaganza.positionNav();
     }).resize();
+  },
+
+  positionNav: function() {
+    var margin = 30;
+    var offset = Pigstravaganza.pages.offset().left;
+    $('nav').css({left: (margin + offset + 'px')});
   },
 
 };

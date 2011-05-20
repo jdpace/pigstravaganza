@@ -14,34 +14,72 @@
 // start your custom stylesheet here
 
 body
-  background: #888
+  background: #245e4f url(images/background-texture.jpg) 0 0 repeat
 
 #content
-  width: 1020px
-  margin: 0 auto
-  background: #FFF
+  height: 100%
   position: relative
-
+  overflow: hidden
   nav
-    position: absolute
-    left: -40px
-    top: 20px
+    position: fixed
+    left: 40px
+    top: 0px
     ul
       width: 40px
       overflow: hidden
-      border: 1px solid #000
+      background-color: #999
+      border: 1px solid #FFF
+      border-top: none
+      border-bottom-left-radius: 12px
+      -webkit-border-bottom-left-radius: 12px
+      -moz-border-bottom-left-radius: 12px
+      border-bottom-right-radius: 12px
+      -webkit-border-bottom-right-radius: 12px
+      -moz-border-bottom-right-radius: 12px
+      box-shadow: 4px 4px 6px #000
+      opacity: 0.20
       li
         margin: 0
+        padding: 0.6em 0.8em
         list-style: none
+        border-bottom: 1px solid #666
+        border-top: 1px solid #EEE
+        &:first-child
+          border-top: none
+        &:last-child
+          border-bottom: none
 
+#pages
+  width: 1020px
+  margin: 0 auto
+  position: relative
+  top: 0px
+  background: white
+  box-shadow: 0 0 10px #333
+  -webkit-box-shadow: 0 0 10px #333
+  -moz-box-shadow: 0 0 10px #333
   .page
-    display:none
-    &.active
-      display: block
-    &#poster
-      height: 2080px
-      background: url(images/poster.jpg) 0 0 no-repeat
-      *
-        position: absolute
-        left: -5000em
+    vertical-align: top
+    color: #f0f0f0
+    background: #1e0502 url(images/page-texture.jpg) 0 0 repeat
+    .page-content
+      padding: 20px
+      padding-top: 250px
+      background: transparent url(images/inner-header.jpg) 0 0 no-repeat
 
+/* Poster */
+#poster
+  height: 2080px
+  background: url(images/poster.jpg) left top no-repeat !important
+
+#content .page#poster *
+  position: absolute
+  left: -5000em
+
+/* Map */
+#map iframe
+  display: block
+  width: 100%
+  height: 500px
+  margin: 0 auto
+  border: 1px solid #BBB
