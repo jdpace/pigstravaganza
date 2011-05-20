@@ -12,3 +12,36 @@
 @import "forms"
 @import "tables"
 // start your custom stylesheet here
+
+body
+  background: #888
+
+#content
+  width: 1020px
+  margin: 0 auto
+  background: #FFF
+  position: relative
+
+  nav
+    position: absolute
+    left: -40px
+    top: 20px
+    ul
+      width: 40px
+      overflow: hidden
+      border: 1px solid #000
+      li
+        margin: 0
+        list-style: none
+
+  .page
+    display:none
+    &.active
+      display: block
+    &#poster
+      height: 2080px
+      background: url(images/poster.jpg) 0 0 no-repeat
+      *
+        position: absolute
+        left: -5000em
+

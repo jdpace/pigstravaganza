@@ -1,9 +1,18 @@
-!!!
+!!! html
 %html
   %head
     %title pigstravaganza.com
-  = stylesheet_link_tag :all
-  = javascript_include_tag :defaults
-  = csrf_meta_tag
+
+    = csrf_meta_tag
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
 %body
-  = yield
+  #content
+    #pages= yield
+
+    %nav
+      %ul
+        %li.active= link_to 'Poster', '#poster'
+        %li= link_to 'Map', '#map'
+        %li= link_to 'Gallery', '#gallery'
+        %li= link_to 'Roster', '#roster'

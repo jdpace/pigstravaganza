@@ -11,9 +11,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: pigstravaganza.com_development
+  database: pigstravaganza_development
   pool: 5
-  username: postgres
+  user: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -37,15 +37,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: pigstravaganza.com_test
+  database: pigstravaganza_test
   pool: 5
-  username: postgres
+  user: postgres
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: pigstravaganza.com_production
+  database: pigstravaganza_production
   pool: 5
-  username: postgres
+  user: postgres
   password:
