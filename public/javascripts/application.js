@@ -12,6 +12,12 @@ var Pigstravaganza = {
       var page = $( $(this).attr('href') );
       Pigstravaganza.pages.trigger('switch', [page]);
     });
+
+    $('nav').hoverIntent({
+      over: Pigstravaganza.showNav,
+      out:  Pigstravaganza.hideNav,
+      timeout: 1500
+    });
   },
 
   activatePages: function() {
@@ -33,6 +39,10 @@ var Pigstravaganza = {
       top: (-1 * offset + "px")
     });
     $(window).scrollTop(0);
+
+    if (page.attr('id') == 'poster')
+      Pigstravaganza.showNav();
+
   },
 
   sumPageHeights: function(pages) {
@@ -65,6 +75,14 @@ var Pigstravaganza = {
     var margin = 30;
     var offset = Pigstravaganza.pages.offset().left;
     $('nav').css({left: (margin + offset + 'px')});
+  },
+
+  showNav: function() {
+    $('nav').animate({top: '0px'});
+  },
+
+  hideNav: function() {
+    $('nav').animate({top: '-230px'});
   },
 
 };

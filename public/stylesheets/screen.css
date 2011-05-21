@@ -336,7 +336,7 @@ body {
   #content nav {
     position: fixed;
     left: 40px;
-    top: 0px; }
+    top: -230px; }
     #content nav ul {
       overflow: hidden;
       background-color: #999999;
@@ -362,6 +362,10 @@ body {
           border-top: none; }
         #content nav ul li:last-child {
           border-bottom: none; }
+        #content nav ul li.last {
+          height: 26px;
+          background: transparent url(images/nav-handle.png) 50% 50% no-repeat;
+          cursor: pointer; }
         #content nav ul li a {
           display: block;
           padding: 5px 10px;
