@@ -32,8 +32,7 @@ Pigstravaganza =
     Pigstravaganza.showNav() if page.attr('id') == 'poster'
 
   sumPageHeights: (pages) ->
-    _.reduce(_.map(pages, (page) -> $(page).outerHeight()), (sum,height) ->
-      sum = (sum || 0) + height)
+    _.reduce(_.map(pages, (page) -> $(page).outerHeight()), ((sum,height) -> sum+height), 0)
 
   resizeContentForPage: (page) ->
     targetHeight = Math.max($(window).height(), page.outerHeight())
