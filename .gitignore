@@ -6,3 +6,5 @@ vendor/bundler_gems
 config/database.yml
 .sass-cache/*
 .DS_Store
+public/javascripts/application.js
+public/javascripts/roster.js
