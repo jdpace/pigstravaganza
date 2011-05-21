@@ -28,7 +28,7 @@ Pigstravaganza =
   scrollToPage: (page) ->
     precedingPages = page.prevAll('.page')
     offset = Pigstravaganza.sumPageHeights(precedingPages)
-    Pigstravaganza.pages.animate({top: (-1 * offset + 'px')})
+    Pigstravaganza.pages.animate {top: (-1 * offset + 'px')}
     Pigstravaganza.showNav() if page.attr('id') == 'poster'
 
   sumPageHeights: (pages) ->
@@ -41,7 +41,7 @@ Pigstravaganza =
 
   activateViewport: () ->
     $(window).resize () ->
-      $('.page').css({'min-height': $(window).height() + 'px'})
+      $('.page').css {'min-height': $(window).height() + 'px'}
       Pigstravaganza.positionNav()
     .resize()
 
@@ -55,3 +55,5 @@ Pigstravaganza =
 
   hideNav: () ->
     $('nav').animate {top: '-230px'}
+
+$(Pigstravaganza.setup)
