@@ -410,3 +410,15 @@ body {
   height: 500px;
   margin: 0 auto;
   border: 1px solid #bbbbbb; }
+#map small a {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: white;
+  color: black !important;
+  opacity: 0.3; }
+  #map small a:hover {
+    text-decoration: none;
+    opacity: 0.5; }

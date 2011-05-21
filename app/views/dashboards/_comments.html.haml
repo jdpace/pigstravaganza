@@ -1,6 +1,23 @@
 #comments.page
   .page-content
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisl nec diam molestie tempus sit amet vitae ligula. Suspendisse potenti. Etiam aliquam cursus tempor. Pellentesque tristique nulla at nisi commodo et lacinia nisi pellentesque. Aenean auctor tempor pulvinar. Nunc bibendum nisi at velit lacinia quis auctor turpis pulvinar. Nam eleifend tempus adipiscing. Curabitur fringilla hendrerit dui, a vehicula mi ultricies vel. Proin quis tempus mauris. Integer convallis augue nec sem volutpat eget suscipit leo tempor. Proin aliquet tempor ornare.
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisl nec diam molestie tempus sit amet vitae ligula. Suspendisse potenti. Etiam aliquam cursus tempor. Pellentesque tristique nulla at nisi commodo et lacinia nisi pellentesque. Aenean auctor tempor pulvinar. Nunc bibendum nisi at velit lacinia quis auctor turpis pulvinar. Nam eleifend tempus adipiscing. Curabitur fringilla hendrerit dui, a vehicula mi ultricies vel. Proin quis tempus mauris. Integer convallis augue nec sem volutpat eget suscipit leo tempor. Proin aliquet tempor ornare.
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisl nec diam molestie tempus sit amet vitae ligula. Suspendisse potenti. Etiam aliquam cursus tempor. Pellentesque tristique nulla at nisi commodo et lacinia nisi pellentesque. Aenean auctor tempor pulvinar. Nunc bibendum nisi at velit lacinia quis auctor turpis pulvinar. Nam eleifend tempus adipiscing. Curabitur fringilla hendrerit dui, a vehicula mi ultricies vel. Proin quis tempus mauris. Integer convallis augue nec sem volutpat eget suscipit leo tempor. Proin aliquet tempor ornare.
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisl nec diam molestie tempus sit amet vitae ligula. Suspendisse potenti. Etiam aliquam cursus tempor. Pellentesque tristique nulla at nisi commodo et lacinia nisi pellentesque. Aenean auctor tempor pulvinar. Nunc bibendum nisi at velit lacinia quis auctor turpis pulvinar. Nam eleifend tempus adipiscing. Curabitur fringilla hendrerit dui, a vehicula mi ultricies vel. Proin quis tempus mauris. Integer convallis augue nec sem volutpat eget suscipit leo tempor. Proin aliquet tempor ornare.
+
+    #disqus_thread
+    :javascript
+      var disqus_shortname = 'pigstravaganza'; // required: replace example with your forum shortname
+      var disqus_identifier = 'pigstravaganza_2011_comments';
+      var disqus_url = 'http://2011.pigstravaganza.com';
+      var disqus_developer = 0;
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    %noscript
+      Please enable JavaScript to view the
+      = link_to "comments powered by Disqus.", "http://disqus.com/?ref_noscript"
+
+    = link_to "http://disqus.com", :class => "dsq-brlink" do
+      blog comments powered by
+      %span.logo-disqus Disqus
