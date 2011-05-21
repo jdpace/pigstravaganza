@@ -18,7 +18,18 @@ Roster =
     name = attendee[0]
     email = attendee[1]
     guests = attendee[2]
-    "<img class='attendee' src='" + Roster.gravatarUrl(email) + "' />"
+
+    headshot = $('<img/>')
+      .attr('src', Roster.gravatarUrl(email))
+      .addClass('attendee')
+    name = $('<strong/>').text(name)
+
+    tagline = $('<span/>').text("plus " + guests) if guests > 0
+
+    $('<li/>')
+      .append(headshot)
+      .append(name)
+      .append(tagline)
 
   appendPeople: (elem, people) ->
     _.each(people, (person) ->
