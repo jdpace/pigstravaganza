@@ -23,6 +23,7 @@ Pigstravaganza =
 
   switchPage: (e, page) ->
     Pigstravaganza.scrollToPage(page)
+    Pigstravaganza.loadPage(page)
     Pigstravaganza.resizeContentForPage(page)
 
   scrollToPage: (page) ->
@@ -30,6 +31,20 @@ Pigstravaganza =
     offset = Pigstravaganza.sumPageHeights(precedingPages)
     Pigstravaganza.pages.animate {top: (-1 * offset + 'px')}
     Pigstravaganza.showNav() if page.attr('id') == 'poster'
+
+  loadPage: (page) ->
+    return unless page.find('.page-content[data-src]').length > 0
+
+    dataSrc = page.find('.page-content[data-src]')
+      .attr 'data-src'
+
+    page.find('.page-content')
+      .load(dataSrc, () ->
+        Pigstravaganza.resizeContentForPage(page)
+        page.find("a[rel='lightbox']")
+          .fancybox()
+      )
+      .removeAttr('data-src')
 
   sumPageHeights: (pages) ->
     _.reduce(_.map(pages, (page) -> $(page).outerHeight()), ((sum,height) -> sum+height), 0)

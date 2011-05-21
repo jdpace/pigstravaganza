@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem "rails"
 gem "haml"
 gem "pg"
+gem "flickr_fu"
 
 group "development", "test" do
   gem "rspec", "~> 2.5"

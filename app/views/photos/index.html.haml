@@ -1,0 +1,9 @@
+%ul#photos
+  - @photos.each do |photo|
+    %li
+      = link_to photo.url(:large), :rel => 'lightbox' do
+        = image_tag photo.url(:small)
+      %span= photo.title
+  %li.clear
+
+%br.clear
