@@ -329,6 +329,10 @@ tr:hover {
 body {
   background: #245e4f url(images/background-texture.jpg) 0 0 repeat; }
 
+.clear {
+  float: none !important;
+  clear: both !important; }
+
 #content {
   height: 100%;
   position: relative;
@@ -422,3 +426,20 @@ body {
   #map small a:hover {
     text-decoration: none;
     opacity: 0.5; }
+
+/* Photo Gallery */
+ul#photos {
+  margin: 0;
+  list-style: none; }
+  ul#photos li {
+    float: left;
+    min-height: 240px;
+    width: 32.5%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 0 4em 0; }
+    ul#photos li:nth-child(3n+4) {
+      clear: left; }
+    ul#photos li span {
+      display: block;
+      font-size: 1.2em; }

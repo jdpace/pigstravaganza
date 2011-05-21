@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
 
   def index
-    @photos = flickr.photos.search :tags => 'pigstravaganza'
+    @photos = flickr.photos.search :tags => 'pig pickin'
     render :layout => false
   end
 
