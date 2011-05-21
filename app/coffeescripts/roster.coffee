@@ -5,22 +5,27 @@ Roster =
      ['Jared Pace', 'jared@thinkrelevance.com', 0]
      ['Jason Rudolph', 'jason@thinkrelevance.com', 1]]
 
+  poopieheads:
+    [['Rob Sanheim', 'rob@thinkrelevance.com', 0]
+     ['Sam Umbach', 'sam@thinkrelevance.com', 0]]
+
   baseUrl: 'http://www.gravatar.com/avatar/'
 
   gravatarUrl: (email) ->
     Roster.baseUrl + MD5(email) + '.jpg'
 
-  attendeeElement: (attendee) ->
+  personElement: (attendee) ->
     name = attendee[0]
     email = attendee[1]
     guests = attendee[2]
-    "<p class='attendee'><span class='name'>" + name + "</span><img src='" + Roster.gravatarUrl(email) + "' /></p>"
+    "<img class='attendee' src='" + Roster.gravatarUrl(email) + "' />"
 
-  showGravatars: () ->
-    _.each(Roster.attendees, (attendee) ->
-      $('#roster').append(Roster.attendeeElement(attendee)))
+  appendPeople: (elem, people) ->
+    _.each(people, (person) ->
+      $(elem).append(Roster.personElement(person)))
 
   setup: () ->
-    Roster.showGravatars()
+    Roster.appendPeople('#rsvps', Roster.attendees)
+    Roster.appendPeople('#poopie-heads', Roster.poopieheads)
 
 $(Roster.setup)
