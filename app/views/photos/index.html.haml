@@ -1,0 +1,5 @@
+%ul#photos
+  - @photos.each do |photo|
+    %li
+      = link_to photo.url(:large) do
+        = image_tag photo.url(:small)
