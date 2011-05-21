@@ -35,6 +35,8 @@ Pigstravaganza =
   loadPage: (page) ->
     return unless page.find('.page-content[data-src]').length > 0
 
+    Pigstravaganza.showLoadingIcon(page)
+
     dataSrc = page.find('.page-content[data-src]')
       .attr 'data-src'
 
@@ -69,5 +71,10 @@ Pigstravaganza =
 
   hideNav: () ->
     $('nav').animate {top: '-230px'}
+
+  showLoadingIcon: (page) ->
+    loadingIcon = $('<span/>').addClass('loading').text('loading')
+    page.find('.page-content').append(loadingIcon)
+
 
 $(Pigstravaganza.setup)
