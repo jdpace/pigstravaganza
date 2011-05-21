@@ -32,6 +32,7 @@ var Pigstravaganza = {
     Pigstravaganza.pages.animate({
       top: (-1 * offset + "px")
     });
+    $(window).scrollTop(0);
   },
 
   sumPageHeights: function(pages) {

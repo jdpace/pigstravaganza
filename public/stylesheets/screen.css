@@ -322,6 +322,10 @@ tbody tr:nth-child(odd):hover td,
 tr:hover {
   background: white !important; }
 
+@font-face {
+  font-family: pictos;
+  src: url(fonts/Pictos.otf); }
+
 body {
   background: #245e4f url(images/background-texture.jpg) 0 0 repeat; }
 
@@ -334,7 +338,6 @@ body {
     left: 40px;
     top: 0px; }
     #content nav ul {
-      width: 40px;
       overflow: hidden;
       background-color: #999999;
       border: 1px solid white;
@@ -346,17 +349,28 @@ body {
       -webkit-border-bottom-right-radius: 12px;
       -moz-border-bottom-right-radius: 12px;
       box-shadow: 4px 4px 6px black;
-      opacity: 0.2; }
+      opacity: 0.3; }
       #content nav ul li {
         margin: 0;
-        padding: 0.6em 0.8em;
+        width: 100%;
         list-style: none;
         border-bottom: 1px solid #666666;
-        border-top: 1px solid #eeeeee; }
+        border-top: 1px solid #eeeeee;
+        font-family: pictos;
+        font-size: 24px; }
         #content nav ul li:first-child {
           border-top: none; }
         #content nav ul li:last-child {
           border-bottom: none; }
+        #content nav ul li a {
+          display: block;
+          padding: 5px 10px;
+          text-align: center;
+          color: #bbbbbb;
+          text-shadow: 2px 2px 3px #333333; }
+          #content nav ul li a:hover {
+            text-decoration: none;
+            color: white; }
 
 #pages {
   width: 1020px;

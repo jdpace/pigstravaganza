@@ -13,6 +13,10 @@
 @import "tables"
 // start your custom stylesheet here
 
+@font-face
+  font-family: pictos
+  src: url(fonts/Pictos.otf)
+
 body
   background: #245e4f url(images/background-texture.jpg) 0 0 repeat
 
@@ -25,7 +29,6 @@ body
     left: 40px
     top: 0px
     ul
-      width: 40px
       overflow: hidden
       background-color: #999
       border: 1px solid #FFF
@@ -37,17 +40,28 @@ body
       -webkit-border-bottom-right-radius: 12px
       -moz-border-bottom-right-radius: 12px
       box-shadow: 4px 4px 6px #000
-      opacity: 0.20
+      opacity: 0.3
       li
         margin: 0
-        padding: 0.6em 0.8em
+        width: 100%
         list-style: none
         border-bottom: 1px solid #666
         border-top: 1px solid #EEE
+        font-family: pictos
+        font-size: 24px
         &:first-child
           border-top: none
         &:last-child
           border-bottom: none
+        a
+          display: block
+          padding: 5px 10px
+          text-align: center
+          color: #BBB
+          text-shadow: 2px 2px 3px #333
+          &:hover
+            text-decoration: none
+            color: #FFF
 
 #pages
   width: 1020px
