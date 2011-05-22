@@ -32,6 +32,12 @@ GEM
     barista (1.0.0)
       coffee-script (~> 2.1.1)
     builder (2.1.2)
+    capistrano (2.6.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     capybara (0.4.1.2)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -62,6 +68,7 @@ GEM
       mime-types (> 0.0.0)
       xml-magic (> 0.0.0)
     haml (3.1.1)
+    highline (1.6.2)
     i18n (0.5.0)
     json_pure (1.5.1)
     mail (2.2.19)
@@ -71,8 +78,14 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mocha (0.9.12)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.1.4)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
     nokogiri (1.4.4)
-    pg (0.11.0)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -107,6 +120,7 @@ GEM
       railties (~> 3.0)
       rspec (~> 2.5.0)
     rubyzip (0.9.4)
+    rvm (1.6.12)
     selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
@@ -125,13 +139,14 @@ PLATFORMS
 
 DEPENDENCIES
   barista
+  capistrano
   capybara
   database_cleaner
   factory_girl_rails (= 1.0)
   flickr_fu
   haml
   mocha
-  pg
   rails
   rspec (~> 2.5)
   rspec-rails (~> 2.5)
+  rvm
