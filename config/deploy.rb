@@ -27,7 +27,6 @@ set :scm_verbose, true
 set(:current_branch) { `git branch`.match(/\* (\S+)\s/m)[1] || raise("Couldn't determine current branch") }
 set :branch, defer { current_branch }
 
-after "deploy:update_code", "barista:brew"
 after "deploy", "deploy:tag_last_deploy"
 set :rails_env, "production"
 
@@ -50,11 +49,5 @@ namespace :deploy do
 
   task :seed do
     run %{cd #{latest_release} && RAILS_ENV=#{rails_env} rake db:seed --trace}
-  end
-end
-
-namespace :barista do
-  task :brew do
-    run %{cd #{release_path} && bundle exec rake barista:brew}
   end
 end
