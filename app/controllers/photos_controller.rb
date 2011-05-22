@@ -1,3 +1,5 @@
+require 'flickr_fu'
+
 class PhotosController < ApplicationController
 
   def index

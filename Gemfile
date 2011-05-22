@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "rails"
 gem "haml"
-gem "flickr_fu"
+gem "flickr_fu", :require => nil
 gem "barista"
 
 group "development", "test" do
