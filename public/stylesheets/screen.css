@@ -453,3 +453,31 @@ ul#photos {
     ul#photos li span {
       display: block;
       font-size: 1.2em; }
+
+/* Roster */
+ul#rsvps, ul#poopie-heads {
+  margin: 0;
+  list-style: none; }
+  ul#rsvps li, ul#poopie-heads li {
+    float: left;
+    padding-left: 95px;
+    min-height: 80px;
+    width: 120px;
+    list-style-type: none;
+    margin: 0 40px 3.5em 0;
+    color: #bbbbbb;
+    font-style: italic;
+    font-size: 14px; }
+    ul#rsvps li:nth-child(4n+4), ul#poopie-heads li:nth-child(4n+4) {
+      margin-right: 0; }
+    ul#rsvps li:nth-child(4n+5), ul#poopie-heads li:nth-child(4n+5) {
+      clear: left; }
+    ul#rsvps li img, ul#poopie-heads li img {
+      float: left;
+      margin-left: -95px;
+      border: 1px solid #444444; }
+    ul#rsvps li strong, ul#poopie-heads li strong {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-style: normal; }

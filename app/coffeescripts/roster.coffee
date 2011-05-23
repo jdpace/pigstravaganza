@@ -24,7 +24,7 @@ Roster =
       .addClass('attendee')
     name = $('<strong/>').text(name)
 
-    tagline = $('<span/>').text("plus " + guests) if guests > 0
+    tagline = $('<span/>').text("+ " + guests) if guests > 0
 
     $('<li/>')
       .append(headshot)

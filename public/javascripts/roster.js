@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sun, 22 May 2011 21:23:36 GMT from
+/* DO NOT MODIFY. This file was compiled Mon, 23 May 2011 12:58:28 GMT from
  * /Users/jared/Dev/projects/pigstravaganza.com/app/coffeescripts/roster.coffee
  */
 
@@ -19,7 +19,7 @@
       headshot = $('<img/>').attr('src', Roster.gravatarUrl(email)).addClass('attendee');
       name = $('<strong/>').text(name);
       if (guests > 0) {
-        tagline = $('<span/>').text("plus " + guests);
+        tagline = $('<span/>').text("+ " + guests);
       }
       return $('<li/>').append(headshot).append(name).append(tagline);
     },
