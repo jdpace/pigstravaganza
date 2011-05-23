@@ -1,12 +1,12 @@
-/* DO NOT MODIFY. This file was compiled Mon, 23 May 2011 12:58:28 GMT from
+/* DO NOT MODIFY. This file was compiled Mon, 23 May 2011 21:40:38 GMT from
  * /Users/jared/Dev/projects/pigstravaganza.com/app/coffeescripts/roster.coffee
  */
 
 (function() {
   var Roster;
   Roster = {
-    attendees: [['Alan Dipert', 'alan@thinkrelevance.com', 1], ['Jared Pace', 'jared@thinkrelevance.com', 0], ['Jason Rudolph', 'jason@thinkrelevance.com', 1]],
-    poopieheads: [['Rob Sanheim', 'rob@thinkrelevance.com', 0], ['Sam Umbach', 'sam@thinkrelevance.com', 0]],
+    attendees: [['Aaron Bedra', 'aaron@thinkrelevance.com', 0], ['Alan Dipert', 'alan@thinkrelevance.com', 1], ['Alex Warr', 'alex@thinkrelevance.com', 4], ['Andrew Collins', 'andrew@thinkrelevance.com', 1], ['Bernard', 'bernard@example.com', 1], ['Chris Redinger', 'chris@thinkrelevance.com', 3], ['Don Mullen', 'don@thinkrelevance.com', 2], ['Jared Pace', 'jared@thinkrelevance.com', 0], ['Jason Rudolph', 'jason@thinkrelevance.com', 1], ['Jess Martin', 'jess@thinkrelevance.com', 1], ['Jon Distad', 'jon@thinkrelevance.com', 0], ['Jon Hildebrand', 'jon@example.com', 3], ['Larry Karnowski', 'larry@thinkrelevance.com', 4], ['Lynn Grogan', 'lynn@thinkrelevance.com', 4], ['Maggie Litton', 'maggie@thinkrelevance.com', 0], ['Marc Phillips', 'marc@thinkrelevance.com', 3], ['Michael Parenteau', 'michael@thinkrelevance.com', 2], ['Muness Castle', 'muness@thinkrelevance.com', 1]],
+    poopieheads: [['Alex Redington', 'lovemachine@thinkrelevance.com', 0], ['Ben Vandgrift', 'ben@thinkrelevance.com', 0], ['Bobby Calderwood', 'bobby@thinkrelevance.com', 0], ['Craig Andera', 'craig@thinkrelevance.com', 0], ['Chad Humphries', 'chad@thinkrelevance.com', 0], ['David Liebke', 'david@thinkrelevance.com', 0], ['Jamie Kite', 'jamie@thinkrelevance.com', 0], ['Justin Gehtland', 'justin@thinkrelevance.com', 0], ['Luke Vanderhart', 'luke@thinkrelevance.com', 0], ['Michael Fogus', 'fogus@thinkrelevance.com', 0], ['Rob Sanheim', 'rob@thinkrelevance.com', 0], ['Sam Umbach', 'sam@thinkrelevance.com', 0], ['Shay Frendt', 'shay@thinkrelevance.com', 0], ['Stu Halloway', 'stu@thinkrelevance.com', 0], ['Stuart Sierra', 'stuart.sierra@thinkrelevance.com', 0], ['Tim Ewald', 'tim@thinkrelevance.com', 0]],
     baseUrl: 'http://www.gravatar.com/avatar/',
     gravatarUrl: function(email) {
       return Roster.baseUrl + MD5(email) + '.jpg';
