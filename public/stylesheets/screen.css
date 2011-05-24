@@ -482,3 +482,6 @@ ul#rsvps, ul#poopie-heads {
       color: #f0f0f0;
       font-size: 18px;
       font-style: normal; }
+
+ul#poopie-heads span {
+  display: none; }
