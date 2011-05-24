@@ -5,6 +5,7 @@ Roster =
     ['Alan Dipert',       'alan@thinkrelevance.com',    1]
     ['Alex Warr',         'alex@thinkrelevance.com',    4]
     ['Andrew Collins',    'andrew@thinkrelevance.com',  1]
+    ['Ben Vandgrift',     'ben@thinkrelevance.com',     0]
     ['Bernard',           'bernard@example.com',        1]
     ['Chris Redinger',    'chris@thinkrelevance.com',   3]
     ['Don Mullen',        'don@thinkrelevance.com',     2]
@@ -19,11 +20,11 @@ Roster =
     ['Marc Phillips',     'marc@thinkrelevance.com',    3]
     ['Michael Parenteau', 'michael@thinkrelevance.com', 2]
     ['Muness Castle',     'muness@thinkrelevance.com',  1]
+    ['Shay Frendt',       'shay@thinkrelevance.com',    1]
   ]
 
   poopieheads: [
     ['Alex Redington',    'lovemachine@thinkrelevance.com',     0]
-    ['Ben Vandgrift',     'ben@thinkrelevance.com',             0]
     ['Bobby Calderwood',  'bobby@thinkrelevance.com',           0]
     ['Craig Andera',      'craig@thinkrelevance.com',           0]
     ['Chad Humphries',    'chad@thinkrelevance.com',            0]
@@ -34,7 +35,6 @@ Roster =
     ['Michael Fogus',     'fogus@thinkrelevance.com',           0]
     ['Rob Sanheim',       'rob@thinkrelevance.com',             0]
     ['Sam Umbach',        'sam@thinkrelevance.com',             0]
-    ['Shay Frendt',       'shay@thinkrelevance.com',            0]
     ['Stu Halloway',      'stu@thinkrelevance.com',             0]
     ['Stuart Sierra',     'stuart.sierra@thinkrelevance.com',   0]
     ['Tim Ewald',         'tim@thinkrelevance.com',             0]
