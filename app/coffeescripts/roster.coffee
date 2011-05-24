@@ -5,7 +5,7 @@ Roster =
     ['Alan Dipert',       'alan@thinkrelevance.com',    1]
     ['Alex Warr',         'alex@thinkrelevance.com',    4]
     ['Andrew Collins',    'andrew@thinkrelevance.com',  1]
-    ['Ben Vandgrift',     'ben@thinkrelevance.com',     0]
+    ['Ben Vandgrift',     'ben@thinkrelevance.com',     1]
     ['Bernard',           'bernard@example.com',        1]
     ['Chris Redinger',    'chris@thinkrelevance.com',   3]
     ['Don Mullen',        'don@thinkrelevance.com',     2]
