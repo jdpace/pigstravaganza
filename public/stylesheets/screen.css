@@ -394,8 +394,8 @@ body {
     color: #f0f0f0;
     background: #1e0502 url(images/page-texture.jpg) 0 0 repeat; }
     #pages .page .page-content {
-      padding: 20px;
-      padding-top: 250px;
+      padding: 40px 80px;
+      padding-top: 280px;
       background: transparent url(images/inner-header.jpg) 0 0 no-repeat;
       position: relative; }
       #pages .page .page-content .loading {
@@ -462,15 +462,15 @@ ul#rsvps, ul#poopie-heads {
     float: left;
     padding-left: 95px;
     min-height: 80px;
-    width: 120px;
+    width: 165px;
     list-style-type: none;
     margin: 0 40px 3.5em 0;
     color: #bbbbbb;
     font-style: italic;
     font-size: 14px; }
-    ul#rsvps li:nth-child(4n+4), ul#poopie-heads li:nth-child(4n+4) {
+    ul#rsvps li:nth-child(3n+3), ul#poopie-heads li:nth-child(3n+3) {
       margin-right: 0; }
-    ul#rsvps li:nth-child(4n+5), ul#poopie-heads li:nth-child(4n+5) {
+    ul#rsvps li:nth-child(3n+4), ul#poopie-heads li:nth-child(3n+4) {
       clear: left; }
     ul#rsvps li img, ul#poopie-heads li img {
       float: left;

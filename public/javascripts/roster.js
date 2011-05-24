@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Tue, 24 May 2011 02:35:58 GMT from
+/* DO NOT MODIFY. This file was compiled Tue, 24 May 2011 02:39:52 GMT from
  * /Users/jared/Dev/projects/pigstravaganza.com/app/coffeescripts/roster.coffee
  */
 
@@ -20,6 +20,8 @@
       name = $('<strong/>').text(name);
       if (guests > 0) {
         tagline = $('<span/>').text("+ " + guests);
+      } else {
+        tagline = $('<span/>').text('forever alone');
       }
       return $('<li/>').append(headshot).append(name).append(tagline);
     },
