@@ -475,7 +475,8 @@ ul#rsvps, ul#poopie-heads {
     ul#rsvps li img, ul#poopie-heads li img {
       float: left;
       margin-left: -95px;
-      border: 1px solid #444444; }
+      border: 1px solid #444444;
+      cursor: pointer; }
     ul#rsvps li strong, ul#poopie-heads li strong {
       display: block;
       color: #f0f0f0;

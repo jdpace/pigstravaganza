@@ -66,8 +66,36 @@ Roster =
     _.each(people, (person) ->
       $(elem).append(Roster.personElement(person)))
 
+  appendAudioTags: () ->
+    for num in [1..12]
+      src = "/sounds/farts/fart-" + num
+      audio = $('<audio/>').addClass('fart')
+      audio.append $('<source/>').attr('src', src + '.mp3').attr('type', 'audio/mpeg')
+      audio.append $('<source/>').attr('src', src + '.wav').attr('type', 'audio/wav')
+      $('body').append(audio)
+
+    for num in [1..2]
+      src = "/sounds/oinks/oink-" + num
+      audio = $('<audio/>').addClass('oink')
+      audio.append $('<source/>').attr('src', src + '.mp3').attr('type', 'audio/mpeg')
+      audio.append $('<source/>').attr('src', src + '.wav').attr('type', 'audio/wav')
+      $('body').append(audio)
+
+  enableSounds: () ->
+    $('#poopie-heads img').click () ->
+      farts = $('audio.fart')
+      randomFart = farts.eq( Math.floor(Math.random() * farts.length) )
+      randomFart[0].play()
+
+    $('#rsvps img').click () ->
+      oinks = $('audio.oink')
+      randomOink = oinks.eq( Math.floor(Math.random() * oinks.length) )
+      randomOink[0].play()
+
   setup: () ->
     Roster.appendPeople('#rsvps', Roster.attendees)
     Roster.appendPeople('#poopie-heads', Roster.poopieheads)
+    Roster.appendAudioTags()
+    Roster.enableSounds()
 
 $(Roster.setup)

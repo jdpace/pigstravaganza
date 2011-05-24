@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Mon, 23 May 2011 21:40:38 GMT from
+/* DO NOT MODIFY. This file was compiled Tue, 24 May 2011 02:35:58 GMT from
  * /Users/jared/Dev/projects/pigstravaganza.com/app/coffeescripts/roster.coffee
  */
 
@@ -28,9 +28,44 @@
         return $(elem).append(Roster.personElement(person));
       });
     },
+    appendAudioTags: function() {
+      var audio, num, src, _results;
+      for (num = 1; num <= 12; num++) {
+        src = "/sounds/farts/fart-" + num;
+        audio = $('<audio/>').addClass('fart');
+        audio.append($('<source/>').attr('src', src + '.mp3').attr('type', 'audio/mpeg'));
+        audio.append($('<source/>').attr('src', src + '.wav').attr('type', 'audio/wav'));
+        $('body').append(audio);
+      }
+      _results = [];
+      for (num = 1; num <= 2; num++) {
+        src = "/sounds/oinks/oink-" + num;
+        audio = $('<audio/>').addClass('oink');
+        audio.append($('<source/>').attr('src', src + '.mp3').attr('type', 'audio/mpeg'));
+        audio.append($('<source/>').attr('src', src + '.wav').attr('type', 'audio/wav'));
+        _results.push($('body').append(audio));
+      }
+      return _results;
+    },
+    enableSounds: function() {
+      $('#poopie-heads img').click(function() {
+        var farts, randomFart;
+        farts = $('audio.fart');
+        randomFart = farts.eq(Math.floor(Math.random() * farts.length));
+        return randomFart[0].play();
+      });
+      return $('#rsvps img').click(function() {
+        var oinks, randomOink;
+        oinks = $('audio.oink');
+        randomOink = oinks.eq(Math.floor(Math.random() * oinks.length));
+        return randomOink[0].play();
+      });
+    },
     setup: function() {
       Roster.appendPeople('#rsvps', Roster.attendees);
-      return Roster.appendPeople('#poopie-heads', Roster.poopieheads);
+      Roster.appendPeople('#poopie-heads', Roster.poopieheads);
+      Roster.appendAudioTags();
+      return Roster.enableSounds();
     }
   };
   $(Roster.setup);
