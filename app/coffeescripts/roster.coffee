@@ -21,6 +21,7 @@ Roster =
     ['Michael Parenteau', 'michael@thinkrelevance.com', 2]
     ['Muness Castle',     'muness@thinkrelevance.com',  1]
     ['Shay Frendt',       'shay@thinkrelevance.com',    1]
+    ['Stu Halloway',      'stu@thinkrelevance.com',     4]
   ]
 
   poopieheads: [
@@ -35,7 +36,6 @@ Roster =
     ['Michael Fogus',     'fogus@thinkrelevance.com',           0]
     ['Rob Sanheim',       'rob@thinkrelevance.com',             0]
     ['Sam Umbach',        'sam@thinkrelevance.com',             0]
-    ['Stu Halloway',      'stu@thinkrelevance.com',             0]
     ['Stuart Sierra',     'stuart.sierra@thinkrelevance.com',   0]
     ['Tim Ewald',         'tim@thinkrelevance.com',             0]
   ]
