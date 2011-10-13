@@ -121,6 +121,7 @@ GEM
       rspec (~> 2.5.0)
     rubyzip (0.9.4)
     rvm (1.6.12)
+    sass (3.1.10)
     selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
@@ -150,3 +151,4 @@ DEPENDENCIES
   rspec (~> 2.5)
   rspec-rails (~> 2.5)
   rvm
+  sass
